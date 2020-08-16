@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.toolsqa.utils.CustomListener"/>
+    <listener class-name="com.toolsqa.extentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="1" name="Test1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.toolsqa.testcases.PracticeFormPageTest">
+        <methods>
+          <include name="submitFormAndAssertData" invocation-numbers="2"/>
+          <include name="negativevalidationForLoginPageStatusCode"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.toolsqa.testcases.PracticeFormPageTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

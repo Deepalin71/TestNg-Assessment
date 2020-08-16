@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="com.toolsqa.utils.CustomListener" />
+		<listener class-name="com.toolsqa.extentReportListener.ExtentReportListener"></listener>
+	</listeners>
+	<test name="Test1">
+		<parameter name="browser" value="FF" />
+		<classes>
+			<class name="com.toolsqa.testcases.PracticeFormPageTest" />
+			<class name="com.toolsqa.testcases.LoginPageTest" />
+		</classes>
+	</test>
+
+</suite> 
