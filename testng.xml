@@ -6,7 +6,7 @@
 		<listener class-name="com.toolsqa.extentReportListener.ExtentReportListener"></listener>
 	</listeners>
 	<test name="Test1">
-		<parameter name="browser" value="FF" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.toolsqa.testcases.PracticeFormPageTest" />
 			<class name="com.toolsqa.testcases.LoginPageTest" />
